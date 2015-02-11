@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('app.profile', [
+    angular.module('app.login', [
         'app.core'
     ]);
 })();

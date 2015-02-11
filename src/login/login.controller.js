@@ -2,13 +2,13 @@
     'use strict';
 
     angular
-        .module('app.profile')
-        .controller('ProfileController', ProfileController);
+        .module('app.login')
+        .controller('LoginController', LoginController);
 
-    ProfileController.$inject = ['logger'];
+    LoginController.$inject = ['logger'];
 
     /* @ngInject */
-    function ProfileController(logger) {
+    function LoginController(logger) {
         var vm = this;
 
         vm.user = {};
@@ -16,7 +16,7 @@
         activate();
 
         function activate() {
-            logger.info('Activated Profile View');
+            logger.info('Activated Login View');
         }
     }
 })();

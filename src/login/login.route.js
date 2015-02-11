@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app.profile')
+        .module('app.login')
         .run(appRun);
 
     appRun.$inject = ['routerHelper'];
@@ -15,16 +15,16 @@
     function getStates() {
         return [
             {
-                state: 'profile',
+                state: 'login',
                 config: {
-                    url: '/profile',
-                    templateUrl: 'profile/profile.html',
-                    controller: 'ProfileController',
+                    url: '/login',
+                    templateUrl: 'login/login.html',
+                    controller: 'LoginController',
                     controllerAs: 'vm',
-                    title: 'Profile',
+                    title: 'Login',
                     settings: {
                         nav: 2,
-                        content: '<i class="fa fa-lock"></i> Profile'
+                        content: '<i class="fa fa-lock"></i> Login'
                     }
                 }
             }
